@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  font-family: "Monoton", cursive;
+}
+
+#meme-container {
+  height: 100px;
+  background: red;
+}
+
+img {
+  max-width: 40vw;
+  width: auto;
+}
+
+.image_div {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+.image:before,
+.image:after {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.image:before {
+  content: "X";
+  width: 100%;
+  height: 75%;
+  color: #fff;
+  z-index: 1;
+  bottom: 0;
+  font-size: 5.5em;
+  font-weight: 800;
+}
+
+.image:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rbga(0, 0, 0, 0.4);
+}
+
+.image:hover:after,
+.image:hover:before {
+  opacity: 1;
+  color: rgba(223, 211, 211, 0.4);
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  color: white;
+  font-size: 2em;
+  font-weight: 900;
+  font-family: impact;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+    -2px 0px 0 #000, 2px 2px 5px #000;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
+.top_text {
+  top: 0;
+}
+
+.bottom_text {
+  bottom: 0;
+}
