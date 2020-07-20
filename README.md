@@ -9,3 +9,4 @@ Live site:  https://zen-mirzakhani-514c74.netlify.app/
 Frontend:
 * JavaScript
 * HTML/CSS
+* Bootsrap 
